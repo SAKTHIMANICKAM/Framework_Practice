@@ -28,12 +28,14 @@ Background: Create and Intialize Variables
  Then print "Int_variable ==>", var_int
  And print "String_varible ==>", var_string
  * def var_int_2 = var_int+10
- And print "Int_varaible_2 ==>", var_int_2
+ And print "Int_varaible_2 ==>", var_int_2 
+  * def var_int_3 = var_int+10
+ And print "Int_varaible_3 ==>", var_int_3
  
  Scenario: Accessing the variable from previous scenario,. So it is not possible, scope is limited.
  Given print "Previous scenarios ==>" , var_int
  And print "Previous scenarios ==>", var_string
  And print "Previous scenarios ==> ", var_int_2
- And print 
+ And print "Previous scenarios ==> ", var_int_3
  
  
