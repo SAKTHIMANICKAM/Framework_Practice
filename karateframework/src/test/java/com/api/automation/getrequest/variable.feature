@@ -34,5 +34,6 @@ Background: Create and Intialize Variables
  Given print "Previous scenarios ==>" , var_int
  And print "Previous scenarios ==>", var_string
  And print "Previous scenarios ==> ", var_int_2
+ And print 
  
  
