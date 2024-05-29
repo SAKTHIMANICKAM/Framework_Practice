@@ -1,0 +1,27 @@
+{
+    "SupplyEvent": [
+        {
+            "TransactionTypeId": "Adjustment",
+            "LastTransDate": "2021-12-15T14:03:44",
+            "SupplyDefinition": {
+                "ItemId": "1070242",
+                "LocationId": "7027",
+                "RelayAttributes": [
+                    {
+                        "AttributeName": "SIMAdjustmentType",
+                        "AttributeValue": "04 - Damages"
+                    }
+                ],
+                "SupplyType": {
+                    "SupplyTypeId": "On Hand Available"
+                },
+                "SupplyData": {
+                    "Quantity": "100",
+                    "UOM": "EA",
+                    "QuantityAdjustmentType": "A"
+                }
+            }
+        }
+
+    ]
+}
