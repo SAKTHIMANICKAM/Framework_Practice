@@ -34,3 +34,32 @@ Feature: To test the end point of the application.
     And header Accept = 'application/json'
     When method get
     Then status 200
+    
+    
+    ### Complex JSON Array:
+    Scenario: To read the complex json array and print the response.
+    * def jsonObject =
+    """
+    {
+    "menu": 
+    {
+     "id": "file",
+    "value": "File",
+     "popup": 
+     {
+      "menuitem": 
+      [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+     ]
+  }
+}}
+    
+    """
+    
+  And print jsonObject
+  And print jsonObject.menu
+  And print jsonObject.menu.id
+  And print jsonObject.menu.popup
+  And print jsonObject.menu.popup.menuitem[0]

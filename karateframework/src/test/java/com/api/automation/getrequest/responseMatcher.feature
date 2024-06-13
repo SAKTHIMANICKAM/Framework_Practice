@@ -9,7 +9,7 @@ Feature: To validate the GET End point
   And header Accept = 'application/json'
   When method get
   Then status 200
-  And print response
+  And print response 
   
     Scenario: To get the data in XML Format.
   And path '/normal/webapi/all'
